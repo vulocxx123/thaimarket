@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@200&display=swap');
+/* BIG IMG */
+.big-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 98.vw;
+    height: 100vh;    
+    overflow: hidden;
+}
+.big-img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-attachment:  fixed;
+    background: url("/img/bg.jpg") top center / cover no-repeat;
+    z-index: -2;
+    animation: Inout 5s infinite;
+}
+.big-img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.3;
+}
+.big-img-content {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    max-width: 523px;
+    z-index: 1;
+}
+.big-img-content h2 {
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+.big-img-content p {
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    max-width: 522px;
+    margin-top: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+/* BIG IMG END */
+
+/* ABOUT BEGIN */
+.about {
+    background-color: var(--tim-color);
+}
+.about-padding {
+    padding: 0 10px;
+}
+.about__title {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 33px;
+}
+.about__title-text {
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+    color: #d39415;
+}
+.about__title h3 {
+    padding-top: 30px;
+    font-size: 38px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.about-text-img {
+    display: flex;
+    padding-bottom: 100px;
+
+}
+.about-text {
+    max-width: 50%;
+    color: #fff;
+    padding-right: 10px;
+    padding-right: 60px;
+}
+.about-text h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.about-text p {
+    font-family: initial;
+    padding-bottom: 12px;
+}
+.about-items-img {
+    position: relative;
+}
+.about-items-img::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--primary-color);
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    transform: translate(-50%,-50%);
+    animation: xoayvong 5s infinite;
+   
+}
+@keyframes xoayvong {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg);}
+}
+.about-items-img span {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+    color: #c8d0da;
+}
+.about-items-img img {
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+
+/* MENU BEGIN */
+.menu {
+    background-color: #081b33;
+}
+.menu__session {
+    display: flex;
+    justify-content: center;
+}
+.menu-btn {
+    border: none;
+    background-color: #081b33;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.menu-padding-top {
+    margin-top: 5px;
+}
+.menu__food-items {
+    display: flex;
+    padding: 25px 0;
+}
+
+.menu-padding-bottom {
+    padding-bottom: 50px;
+}
+.menu__img {
+    max-width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu__items-name {
+    padding-left: 27px;
+    padding-top: 21px;
+    cursor: pointer;
+}
+.menu__items-name:hover {
+    color: var(--primary-color);
+}
+.food__price {
+    padding-top: 21px;
+}
+.menu__items {
+    display: flex;
+    width: 460px;
+}
+.menu__items-right {
+    display: flex;
+    padding-left: 30px;
+    position: relative;
+}
+.menu__items-right::after {
+    content: "";
+    height: 1px;
+    top: 137%;
+    width: 584.88px;
+    background-color: #383838;
+    position: absolute;
+}
+.menu__items-left {
+    position: relative;
+    display: flex;
+    padding-right: 30px;
+}
+.menu__items-left::after {
+    content: "";
+    height: 1px;
+    top: 137%;
+    width: 584.88px;
+    background-color: #383838;
+    position: absolute;
+}
+.menu__items-name {
+    color: #fff;
+}
+.food__price-text {
+    color: var(--primary-color);
+}
+.trua {
+    display: none;
+}
+.toi {
+    display: none;
+}
+.diem_tam {
+    display: none;
+}
+.do_uong {
+    display: none;
+}
+.block {
+    display: block;
+}
+/* MENU END */
+
+
+/* ABOUT BEGIN */
+.feedback {
+    background-color: var(--tim-color);
+}
+.feedback_user {
+    border: 2px solid #162b44;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+.feedback_user-header {
+    display: flex;
+    padding: 0 13px;
+}
+.feedback_user-name {
+    margin: auto;
+    color: #fff;
+}
+.feedback_user-name h2 {
+    font-size: 23px;
+    font-weight: 500;
+}
+.feedback_user-name p {
+    font-size: 15px;
+}
+.feedback_user-img img {
+    max-width: 130px;
+    height: 137px;
+    border-radius: 50%;
+    margin-left: 35px;
+    margin-top: 40px;
+    border: 4px solid #464646;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.feedback_user-img:hover img {
+    border: 4px solid var(--primary-color);
+}
+.feedback_user-content {
+    margin-top: 40px;
+    color: #fff;
+    padding: 0 13px;
+}
+.feedback_user-content p {
+    min-height: 175px;
+}
+.feedback_user-icon {
+    color: #d39415;
+    margin: 10px 0 30px 0;
+}
+/* FEEDBACK END */
+/* CHEF BEGIN */
+.partner {
+    background-color: #081b33;
+}
+.chef img {
+    max-width: 375px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.profile-chef {
+    background-color: var(--tim-color);
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 45px;
+    height: 75px;
+    transition: all 0.5s ease;
+}
+.chef:hover .profile-chef {
+    transform: translateY(-44px);
+    background-color: rgb(203, 206, 27);
+}
+.profile-chef-name {
+    font-size: 22px;
+    color: #fff;
+    padding-top: 13px;
+}
+.profile-chef-service {
+    color: #fff;
+}
+/* PROFILE END */
+
+/* FOOTER BEGIN */
+
+.footer {
+    height: 440px;
+    width: 100%;
+    position: relative;
+}
+.footer::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0, 0);
+    opacity: 0.4;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer-items {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+.footer-items-link {
+    padding-top: 130px;
+}
+.footer-items-link h2 {
+    font-size: 20px;
+}
+.footer-items-link a {
+    color: rgb(196, 196, 196);
+    padding: 0 5px;
+}
+.footer-items-link::before {
+        content: "";
+    position: absolute;
+    height: 1px;
+    bottom: 156px;
+    left: 99px;
+    width: 87%;
+    background-color: #fff;
+}
+.footer-end {
+    position: absolute;
+    bottom: 25px;
+    left: 508px;
+}
+.go-top {
+    display: block;
+    height: 55px;
+    width: 100px;
+    z-index: 100;
+    background: url(https://thaimarket.vn/images/gotop.svg) center top no-repeat;
+    position: fixed;
+    cursor: pointer;
+    bottom: -55px;
+    right: 0;
+    transition: all 0.5s ease-in;
+}
+.go-top-scroll {
+    bottom: 100px;
+}
+.messenger {
+    height: 55px;
+    width: 55px;
+    z-index: 100;
+    position: fixed;
+    cursor: pointer;
+    bottom: 5px;
+    right: 21px;
+    transition: all 0.5s ease-in;
+    background-color: #0084ff;
+    border-radius: 50%;
+    text-align: center;
+}
+.messenger-icon {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 14px;
+    margin-left: 2px;
+}
+.chat {
+    position: absolute;
+    top: -9px;
+    width: 180px;
+    right: 56px;
+    color: #000;
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px;
+    font-size: 19px;
+    display: none;
+}
+.chat p {
+    padding: 3px 0;
+}
+.messenger-icon:hover  .chat {
+    display: block;
+}
+.khung-chat {
+    width: 265px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    right: 4px;
+    border-radius: 10px;
+    top: -315px;
+    box-shadow: 5px 10px 5px rgb(0 0 0 / 20%);
+    display: none;
+}
+.khung-chat-header {
+    height: 50px;
+    background-color: #0084ff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+}
+.khung-chat-header .khung-chat-icon1 {
+    font-size: 21px;
+    padding-left: 10px;
+    padding-top: 13px;
+}
+.khung-chat-header {
+    color: #fff;
+}
+.khung-chat-header p {
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+.khung-chat-header .khung-chat-icon2 {
+    padding-top: 11px;
+    font-size: 25px;
+}
+.chat-block {
+    display: block;
+}
